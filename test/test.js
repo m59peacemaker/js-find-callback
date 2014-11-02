@@ -1,5 +1,5 @@
 var test = require('tape');
-var findCb = require(__dirname+'/../');
+var findCb = require('../');
 
 function fooFactory(t) {
   function foo(arg1, optionalArg, done) {
