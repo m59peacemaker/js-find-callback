@@ -1,0 +1,27 @@
+{
+  "name": "find-callback",
+  "version": "1.0.0",
+  "description": "Finds and returns a node style callback from arguments or returns a noop if not found.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m59peacemaker/node.find-callback.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js"
+  },
+  "keywords": [
+    "node",
+    "find",
+    "callback",
+    "arguments"
+  ],
+  "author": "Johnny Hauser",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "tape": "^3.0.1"
+  }
+}
