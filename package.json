@@ -1,6 +1,6 @@
 {
   "name": "find-callback",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Finds and returns a node style callback from arguments or returns a noop if not found.",
   "repository": {
     "type": "git",

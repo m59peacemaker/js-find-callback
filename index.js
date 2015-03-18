@@ -1,10 +1,11 @@
 module.exports = findCallback;
 
-var fn = function(err) { };
+function noop() {}
+noop.isNoop = true;
 
 function findCallback(args) {
-  if (!args.length) { return fn; }
+  if (!args.length) { return noop; }
   var lastArg = args[args.length - 1];
-  var cb = typeof lastArg === 'function' ? lastArg : fn;
+  var cb = typeof lastArg === 'function' ? lastArg : noop;
   return cb;
 }

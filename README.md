@@ -12,18 +12,29 @@ npm install find-callback
 ```javascript
 var findCb = require('find-callback');
 
-function foo(arg1, optionalArg, done) {
-  done = findCb(arguments);
+function foo(arg1, optionalArg, cb) {
+  cb = findCb(arguments);
   //etc
   someAsyncFn(function() {
     //etc
-    done(); // may be arguments[1] if the `optionalArg` was not used
+    cb(); // may be arguments[1] if the `optionalArg` was not used
   });
 }
 
 foo('some arg', function() {
   //etc
 });
+```
+
+### noop.isNoop
+
+If no callback was found, a noop will be returned. You can identify the noop by its property `noop.isNoop`.
+
+```javascript
+cb = findCb(arguments);
+if (cb.isNoop) {
+  // etc
+}
 ```
 
 ### Parameters
