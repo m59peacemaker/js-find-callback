@@ -1,6 +1,6 @@
 # Find Callback
 
-Finds and returns a node style callback from arguments or returns a noop if not found.
+Finds and returns a callback (function that is the last argument) from arguments or returns a noop if not found.
 
 ## Install
 ```

@@ -1,6 +1,6 @@
 {
   "name": "find-callback",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Finds and returns a callback (function that is the last argument) from arguments or returns a noop if not found.",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "author": {
     "name": "Johnny Hauser",
     "email": "johnnyhauser@gmail.com"
-  }
+  },
   "license": "MIT",
   "dependencies": {
 
