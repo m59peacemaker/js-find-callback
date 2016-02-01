@@ -1,8 +1,10 @@
-node_modules
-bower_components
-temp
-tmp
+/node_modules/*
+!/node_modules/app/
+/bower_components
+/vendor
+/temp
+/tmp
+/build
+/plugins
+/platforms
 *.log
-vendor
-dist
-build/**
