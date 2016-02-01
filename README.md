@@ -1,6 +1,6 @@
 # Find Callback
 
-Finds and returns a callback (function that is the last argument) from arguments or returns a noop if not found.
+Finds and returns a node-style callback (function that is the last argument) from given array or returns `undefined` if not found.
 
 ## Install
 ```
@@ -10,37 +10,26 @@ npm install find-callback
 ## Usage
 
 ```javascript
-var findCb = require('find-callback');
+var findCb = require('find-callback')
 
 function foo(arg1, optionalArg, cb) {
-  cb = findCb(arguments);
+  cb = findCb(arguments)
   //etc
   someAsyncFn(function() {
     //etc
-    cb(); // may be arguments[1] if the `optionalArg` was not used
-  });
+    cb() // may be arguments[1] if the `optionalArg` was not used
+  })
 }
 
 foo('some arg', function() {
   //etc
-});
-```
-
-### noop.isNoop
-
-If no callback was found, a noop will be returned. You can identify the noop by its property `noop.isNoop`.
-
-```javascript
-cb = findCb(arguments);
-if (cb.isNoop) {
-  // etc
-}
+})
 ```
 
 ### Parameters
 
-#### args
+#### array
 
 Type: `Array` or `arguments object`
 
-The arguments to search for a callback. The last argument that is a function will be chosen. Otherwise, a noop will be returned.
+The array to search for a node-style callback. The last item in the array will be returned if it is a function.
