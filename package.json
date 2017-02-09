@@ -1,6 +1,6 @@
 {
   "name": "find-callback",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Finds and returns a node-style callback.",
   "repository": {
     "type": "git",
@@ -24,10 +24,8 @@
     "name": "Johnny Hauser",
     "email": "johnnyhauser@gmail.com"
   },
-  "license": "VOL",
-  "dependencies": {
-
-  },
+  "license": "CC0-1.0",
+  "dependencies": {},
   "devDependencies": {
     "tape": "^3.0.1"
   }
